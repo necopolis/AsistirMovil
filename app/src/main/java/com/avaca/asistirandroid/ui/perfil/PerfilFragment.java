@@ -41,7 +41,7 @@ public class PerfilFragment extends Fragment {
         mViewModel.getPropietario().observe(getViewLifecycleOwner(), new Observer<Autoridad>() {
             @Override
             public void onChanged(Autoridad propietario) {
-                binding.edtDNI.setText(propietario.getDNI().toString());
+                binding.edtDNI.setText(propietario.getDNI());
                 binding.edtNombre.setText(propietario.getNombre());
                 binding.edtApellido.setText(propietario.getApellido());
                 binding.edtPassword.setText(propietario.getContraseña());

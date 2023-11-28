@@ -5,21 +5,24 @@ import java.util.Objects;
 
 public class Asistencia implements Serializable {
     public int Id ;
-    public boolean Asitencia ;
+    public boolean Inasistencia ;
     public boolean Justificada ;
     public String Descripcion ;
     public String Imagen ;
     public int AlumnoCursoId ;
-    public AlumnoCurso AlumnoCurso ;
+    public AlumnoCurso AlumnoCurso = new AlumnoCurso() ;
 
-    public Asistencia(int id, boolean asitencia, boolean justificada, String descripcion, String imagen, int alumnoCursoId, com.avaca.asistirandroid.modelo.AlumnoCurso alumnoCurso) {
-        Id = id;
-        Asitencia = asitencia;
-        Justificada = justificada;
-        Descripcion = descripcion;
-        Imagen = imagen;
-        AlumnoCursoId = alumnoCursoId;
-        AlumnoCurso = alumnoCurso;
+    public Asistencia(int id, boolean Inasistencia, boolean justificada, String descripcion, String imagen, int alumnoCursoId, AlumnoCurso alumnoCurso) {
+        this.Id = id;
+        this.Inasistencia = Inasistencia;
+        this.Justificada = justificada;
+        this.Descripcion = descripcion;
+        this.Imagen = imagen;
+        this.AlumnoCursoId = alumnoCursoId;
+        this.AlumnoCurso = alumnoCurso;
+    }
+
+    public Asistencia() {
     }
 
     public int getId() {
@@ -30,12 +33,12 @@ public class Asistencia implements Serializable {
         Id = id;
     }
 
-    public boolean isAsitencia() {
-        return Asitencia;
+    public boolean isInasistencia() {
+        return Inasistencia;
     }
 
-    public void setAsitencia(boolean asitencia) {
-        Asitencia = asitencia;
+    public void setAsitencia(boolean inasistencia) {
+        Inasistencia = inasistencia;
     }
 
     public boolean isJustificada() {
@@ -74,7 +77,7 @@ public class Asistencia implements Serializable {
         return AlumnoCurso;
     }
 
-    public void setAlumnoCurso(com.avaca.asistirandroid.modelo.AlumnoCurso alumnoCurso) {
+    public void setAlumnoCurso(AlumnoCurso alumnoCurso) {
         AlumnoCurso = alumnoCurso;
     }
 

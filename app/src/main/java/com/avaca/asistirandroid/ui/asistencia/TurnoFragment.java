@@ -19,7 +19,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.avaca.asistirandroid.R;
-import com.avaca.asistirandroid.databinding.TurnoFragmentBinding;
+//import com.avaca.asistirandroid.databinding.TurnoFragmentBinding;
 import com.avaca.asistirandroid.modelo.Turno;
 import com.avaca.asistirandroid.request.ApiClient;
 
@@ -33,7 +33,7 @@ public class TurnoFragment extends Fragment {
     private RecyclerView ReciclerViewInquilino;
     private TurnoAdapter turnoAdapter;
     private TurnoViewModel mViewModel;
-    private TurnoFragmentBinding binding;
+//    private TurnoFragmentBinding binding;
 
     public static TurnoFragment newInstance() {
         return new TurnoFragment();
@@ -57,23 +57,18 @@ public class TurnoFragment extends Fragment {
         mViewModel.getInquilinoMT().observe(getViewLifecycleOwner(), new Observer<ArrayList<Turno>>() {
             @Override
             public void onChanged(ArrayList<Turno> turnos) {
-//                ReciclerViewInquilino.setLayoutManager(linearLayoutManager);
-//                turnoAdapter = new TurnoAdapter(turnos, view, getLayoutInflater());
-//                ReciclerViewInquilino.setAdapter(turnoAdapter);
                 LinearLayoutManager linearLayoutManager = new LinearLayoutManager(
                         getContext(),
                         LinearLayoutManager.VERTICAL,
                         false
                 );
                 ReciclerViewInquilino.setLayoutManager(linearLayoutManager);
-//                turnoAdapter = new TurnoAdapter(root, turnos);
                 turnoAdapter = new TurnoAdapter(turnos, view , getLayoutInflater());
                 ReciclerViewInquilino.setAdapter(turnoAdapter);
             }
         });
 
         mViewModel.setTurnoMT(getArguments());
-//        return root;
         return view;
     }
 

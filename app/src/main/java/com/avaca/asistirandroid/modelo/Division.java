@@ -12,6 +12,9 @@ public class Division implements Serializable {
         Nombre = nombre;
     }
 
+    public Division() {
+    }
+
     public int getId() {
         return Id;
     }

@@ -11,6 +11,8 @@ public class Ano implements Serializable {
         Id = id;
         Nombre = nombre;
     }
+    public Ano() {
+    }
 
     public int getId() {
         return Id;

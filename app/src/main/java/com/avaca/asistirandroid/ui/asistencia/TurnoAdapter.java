@@ -1,27 +1,18 @@
 package com.avaca.asistirandroid.ui.asistencia;
 
-import android.content.Context;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.avaca.asistirandroid.R;
-import com.avaca.asistirandroid.modelo.Ano;
 import com.avaca.asistirandroid.modelo.Turno;
-import com.avaca.asistirandroid.request.ApiClient;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class TurnoAdapter extends RecyclerView.Adapter<TurnoAdapter.MiViewHolder> {
 
@@ -64,7 +55,9 @@ public class TurnoAdapter extends RecyclerView.Adapter<TurnoAdapter.MiViewHolder
             public void onClick(View view) {
 //                Bundle bundle= new Bundle();
 //////                bundle.putSerializable("turno", turno);
-////                Navigation.findNavController(context).navigate(R.id.rvAno, bundle);
+//                Navigation.findNavController(view).navigate(R.id.btnVerAno);
+//                Navigation.createNavigateOnClickListener(R.id.rvAno,null);
+//                Navigation.findNavController(view).navigate(R.id.action_nav_asistencia_to_anoFragment);
 //                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
 //                transaction.replace(R.id.rvTurno, new SeleccionarDivisionFragment());
 //                transaction.addToBackStack(null);
@@ -86,7 +79,7 @@ public class TurnoAdapter extends RecyclerView.Adapter<TurnoAdapter.MiViewHolder
 
         public MiViewHolder(@NonNull View itemView) {
             super(itemView);
-            tituloTurno=itemView.findViewById(R.id.tvTitleTurno);
+            tituloTurno=itemView.findViewById(R.id.tvFechaEditarDiario);
             btnVer=itemView.findViewById(R.id.btnVerTurno);
         }
     }

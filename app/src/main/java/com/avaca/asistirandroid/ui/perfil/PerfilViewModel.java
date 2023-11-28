@@ -118,7 +118,7 @@ public class PerfilViewModel extends AndroidViewModel {
         this.CamposMT.setValue(false);
     }
     public void AutoridadActual(){
-        int aux=3;
+        int aux=6;
         Call<Autoridad> autoridadsCall= ApiClient.getMyApiClient().obtenerAutoridad(aux);
         autoridadsCall.enqueue(new Callback<Autoridad>() {
             @Override
@@ -138,52 +138,5 @@ public class PerfilViewModel extends AndroidViewModel {
 
             }
         });
-//        autoridadCall.enqueue(new Callback<Autoridad>() {
-//            @Override
-//            public void onResponse(Call<Autoridad> call, Response<Autoridad> response) {
-//                if (response.isSuccessful()){
-//                    toastMT.setValue("Trajo la Autoridad");
-//                    autoridadMT.setValue(response.body());
-//                }else {
-//                    toastMT.setValue("No Trajo la autoridad");
-//                }
-//            }
-//
-//            @Override
-//            public void onFailure(Call<Autoridad> call, Throwable t) {
-//                toastMT.setValue("Error");
-//                Log.d("exc",t.getMessage());
-//            }
-//        });
-//
-//        autoridadCall.enqueue(new Callback() {
-//            @Override
-//            public void onResponse(Call call, Response response) {
-//                if (response.isSuccessful()){
-//                    toastMT.setValue("Trajo Algo");
-//                }else {
-//                    toastMT.setValue("No Trajo al proietario");
-//                }
-//            }
-//
-//            @Override
-//            public void onFailure(Call call, Throwable throwable) {
-//                toastMT.setValue("Error");
-//                Log.d("exc",throwable.getMessage());
-//            }
-//        });
-
-
     }
-    /*private MutableLiveData<String> mText;
-
-    public PerfilViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is perfil fragment");
-    }
-
-    public LiveData<String> getText() {
-        return mText;
-    }*/
-
 }

@@ -10,7 +10,7 @@
             android:title="@string/menu_perfil" />
         <item
             android:id="@+id/nav_asistencia"
-            android:icon="@drawable/logout"
+            android:icon="?android:attr/actionModeFindDrawable"
             android:title="@string/menu_asistencia" />
         <item
             android:id="@+id/nav_gallery"
@@ -24,5 +24,15 @@
             android:id="@+id/nav_logout"
             android:icon="@drawable/logout"
             android:title="@string/menu_logout" />
+
+        <item
+            android:id="@+id/nav_partediario"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="@string/menu_partediario" />
+
+        <item
+            android:id="@+id/informesFragment"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:title="@string/menu_informes" />
     </group>
 </menu>

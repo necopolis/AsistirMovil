@@ -29,17 +29,17 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class  TurnoViewModel extends ViewModel {
+public class  TurnoViewModel extends AndroidViewModel {
     //ApiClient api;
     private Turno turnoAux;
     private final Turno turno;
     private MutableLiveData<ArrayList<Turno>> turnoMT;
     //private final String token;
-    //private final Context context;
+    private final Context context;
 
-    public TurnoViewModel(){
-//        super(application);
-//        context=application.getApplicationContext();
+    public TurnoViewModel(@NonNull Application application){
+        super(application);
+        context=application.getApplicationContext();
         //token = ApiClient.token().getString("token", "");
         turno=new Turno();
     }

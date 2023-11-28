@@ -20,6 +20,9 @@ public class Alumno implements Serializable {
         Activo = activo;
     }
 
+    public Alumno() {
+    }
+
     public int getId() {
         return Id;
     }

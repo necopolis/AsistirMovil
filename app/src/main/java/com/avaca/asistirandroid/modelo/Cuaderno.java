@@ -6,7 +6,7 @@ import java.util.Objects;
 public class Cuaderno implements Serializable {
     public int Id ;
     public int AlumnoId ;
-    public Alumno Alumno ;
+    public Alumno Alumno = new Alumno() ;
     public String Mensaje ;
 
     public Cuaderno(int id, int alumnoId, com.avaca.asistirandroid.modelo.Alumno alumno, String mensaje) {
@@ -14,6 +14,9 @@ public class Cuaderno implements Serializable {
         AlumnoId = alumnoId;
         Alumno = alumno;
         Mensaje = mensaje;
+    }
+
+    public Cuaderno() {
     }
 
     public int getId() {

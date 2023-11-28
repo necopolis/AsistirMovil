@@ -6,17 +6,18 @@ import java.util.Objects;
 
 public class Diario implements Serializable {
     public int Id ;
-    public Date Fecha ;
+    public String Fecha ;
     public String Resumen ;
     public int AutoridadId ;
-    public Autoridad Autoridad ;
 
-    public Diario(int id, Date fecha, String resumen, int autoridadId, com.avaca.asistirandroid.modelo.Autoridad autoridad) {
+    public Diario(int id, String fecha, String resumen, int autoridadId) {
         Id = id;
         Fecha = fecha;
         Resumen = resumen;
         AutoridadId = autoridadId;
-        Autoridad = autoridad;
+    }
+
+    public Diario() {
     }
 
     public int getId() {
@@ -27,11 +28,11 @@ public class Diario implements Serializable {
         Id = id;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return Fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         Fecha = fecha;
     }
 
@@ -51,13 +52,6 @@ public class Diario implements Serializable {
         AutoridadId = autoridadId;
     }
 
-    public com.avaca.asistirandroid.modelo.Autoridad getAutoridad() {
-        return Autoridad;
-    }
-
-    public void setAutoridad(com.avaca.asistirandroid.modelo.Autoridad autoridad) {
-        Autoridad = autoridad;
-    }
 
     @Override
     public int hashCode() {

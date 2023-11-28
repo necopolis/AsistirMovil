@@ -22,9 +22,51 @@
         android:name="com.avaca.asistirandroid.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/anoFragment"
+        android:name="com.avaca.asistirandroid.ui.asistencia.AnoFragment"
+        android:label="ano_fragment"
+        tools:layout="@layout/ano_fragment" />
     <fragment
         android:id="@+id/nav_asistencia"
-        android:name="com.avaca.asistirandroid.ui.asistencia.TurnoFragment"
-        android:label="@string/menu_asistencia"
-        tools:layout="@layout/turno_fragment" />
+        android:name="com.avaca.asistirandroid.ui.asistencia.CursoFragment"
+        android:label="curso_fragment"
+        tools:layout="@layout/curso_fragment" >
+        <action
+            android:id="@+id/action_nav_asistencia_to_alumnoFragment"
+            app:destination="@id/alumnoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_partediario"
+        android:name="com.avaca.asistirandroid.ui.partediario.ParteDiarioFragment"
+        android:label="parte_diario_fragment"
+        tools:layout="@layout/parte_diario_fragment" >
+        <action
+            android:id="@+id/action_nav_partediario_to_diarioCrearFragment"
+            app:destination="@id/diarioCrearFragment" />
+        <action
+            android:id="@+id/action_nav_partediario_to_diarioFragment"
+            app:destination="@id/diarioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diarioCrearFragment"
+        android:name="com.avaca.asistirandroid.ui.partediario.DiarioCrearFragment"
+        android:label="diario_crear_fragment"
+        tools:layout="@layout/diario_crear_fragment" />
+    <fragment
+        android:id="@+id/diarioFragment"
+        android:name="com.avaca.asistirandroid.ui.partediario.DiarioFragment"
+        android:label="diario_fragment"
+        tools:layout="@layout/diario_fragment" />
+    <fragment
+        android:id="@+id/alumnoFragment"
+        android:name="com.avaca.asistirandroid.ui.asistencia.AlumnoFragment"
+        android:label="alumno_fragment"
+        tools:layout="@layout/alumno_fragment" />
+    <fragment
+        android:id="@+id/informesFragment"
+        android:name="com.avaca.asistirandroid.ui.informes.InformesFragment"
+        android:label="Informes"
+        tools:layout="@layout/fragment_informes" />
 </navigation>

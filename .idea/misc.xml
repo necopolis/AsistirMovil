@@ -6,21 +6,36 @@
         <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/drawable/ic_launcher_background.xml" value="0.18703703703703703" />
         <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/drawable/ic_menu_camera.xml" value="0.2203125" />
         <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.22" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.2635416666666667" />
         <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout-land/asistencia_fragment.xml" value="0.11875" />
         <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/ano_fragment.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/alumno_detalle_fragment.xml" value="0.67" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/alumno_fragment.xml" value="0.2552083333333333" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/ano_detalle_fragment.xml" value="0.3546875" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/ano_fragment.xml" value="0.33" />
         <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/app_bar_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/asistencia_fragment.xml" value="0.25" />
-        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/auxiliar.xml" value="0.2421875" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/auxiliar.xml" value="0.25" />
         <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/content_main.xml" value="0.11018518518518519" />
-        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/curso_detalle_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/curso_fragment.xml" value="0.3026041666666667" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/diario_crear_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/diario_detalle_fragment.xml" value="0.67" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/diario_fragment.xml" value="0.21041666666666667" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/division_detalle_fragment.xml" value="0.2328125" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/division_fragment.xml" value="0.2328125" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/fragment_gallery.xml" value="0.25" />
         <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/fragment_informes.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/fragment_perfil.xml" value="0.1953125" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/fragment_slideshow.xml" value="0.259375" />
         <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/nav_header_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/parte_diario_fragment.xml" value="0.33" />
         <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/turno_detalle_fragment.xml" value="0.22" />
         <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/layout/turno_fragment.xml" value="0.2421875" />
         <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/menu/activity_main_drawer.xml" value="0.5" />
         <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/menu/main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/MArio/AndroidStudioProjects/AsistirAndroid/app/src/main/res/xml/file_paths.xml" value="0.21041666666666667" />
       </map>
     </option>
   </component>

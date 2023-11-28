@@ -29,10 +29,10 @@ public class SlideshowViewModel extends ViewModel {
         mText = new MutableLiveData<>();
         //Call<Autoridad> callAlumno = ApiClient.getMyApiClient().obtenerAutoridad(3);
         //Call<ArrayList<Turno>> callAlumno = ApiClient.getMyApiClient().listaDeTurnos();
-        Call<List<Alumno>> callAlumno = ApiClient.getMyApiClient().listaDeAlumnos();
-        callAlumno.enqueue(new Callback<List<Alumno>> () {
+        Call<ArrayList<Alumno>> callAlumno = ApiClient.getMyApiClient().listaDeAlumnos();
+        callAlumno.enqueue(new Callback<ArrayList<Alumno>> () {
             @Override
-            public void onResponse(Call<List<Alumno>>  call, Response<List<Alumno>>  response) {
+            public void onResponse(Call<ArrayList<Alumno>>  call, Response<ArrayList<Alumno>>  response) {
                 if (response.isSuccessful())
                 {
                     mText.setValue(response.body().toString());
@@ -45,7 +45,7 @@ public class SlideshowViewModel extends ViewModel {
             }
 
             @Override
-            public void onFailure(Call<List<Alumno>>  call, Throwable throwable) {
+            public void onFailure(Call<ArrayList<Alumno>>  call, Throwable throwable) {
                 mText.setValue("Error");
                 Log.d("Salida", throwable.getMessage());
             }

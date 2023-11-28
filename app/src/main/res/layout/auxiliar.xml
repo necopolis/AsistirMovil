@@ -1,22 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="300dp"
+    android:layout_height="120dp"
+    android:layout_gravity="clip_horizontal|center"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="200dp"
+    app:cardBackgroundColor="#EADA75"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+    app:circularflow_defaultRadius="20dp"
+    app:circularflow_radiusInDP="20dp"
+    app:contentPadding="10dp" >
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="158dp"
-        android:layout_height="wrap_content"
-        android:text="Turno Tarde"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="63dp" />
+<androidx.constraintlayout.widget.ConstraintLayout
+android:layout_width="match_parent"
+android:layout_height="100dp">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Turno Mañana"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="143dp" />
+<TextView
+    android:id="@+id/tvFechaEditarDiario"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="TextView"
+    android:textColor="#000000"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<Button
+    android:id="@+id/btnVerTurno"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Ver"
+    app:layout_constraintBottom_toBottomOf="parent"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.826" />
+    <!--            android:name="androidx.core.content.FileProvider"
+        implementation 'com.android.support:support-v4:28.0.0'
+            implementation 'com.github.lecho:hellocharts-android:v1.5.8'
+
+             File photoFile = new File(storageDir.getAbsolutePath());
+//                RequestBody requestFile = RequestBody.create(MediaType.parse("multipart/form-data"), photoFile);
+//                MultipartBody.Part body = MultipartBody.Part.createFormData("files", photoFile.getName(), requestFile);
+//                RequestBody name = RequestBody.create(MediaType.parse("text/plain"), "Image description");
+//
+//                //ApiClient.PostInterface apiService = ApiClient.getMyApiClient();
+//                Call<String> call = ApiClient.getMyApiClient().uploadImage(body, name);
+//                call.enqueue(new Callback<String>() {
+//                    @Override
+//                    public void onResponse(Call<String> call, Response<String> response)
+//                    {
+//                        if (response.isSuccessful()) {
+//                            String result = response.body();
+//                            Log.e("Salida", " " +result+ response.message());
+//                        } else {
+//                            Log.e("Salida", "Error: " + response.code());
+//                        }
+//                    }
+//
+//                    @Override
+//                    public void onFailure(Call<String> call, Throwable t) {
+//                        Log.d("Salida", "Error: " + t.getMessage());
+//                    }
+//                });
+    -->
 </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

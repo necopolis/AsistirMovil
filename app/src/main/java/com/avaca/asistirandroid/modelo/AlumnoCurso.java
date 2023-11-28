@@ -7,17 +7,20 @@ public class AlumnoCurso implements Serializable {
     public int Id ;
     public boolean Estado ;
     public int AlumnoId ;
-    public Alumno Alumno ;
+    public Alumno Alumno = new Alumno() ;
     public int CursoId ;
-    public Curso Curso ;
+    public Curso Curso = new Curso() ;
 
-    public AlumnoCurso(int id, boolean estado, int alumnoId, com.avaca.asistirandroid.modelo.Alumno alumno, int cursoId, Curso curso) {
+    public AlumnoCurso(int id, boolean estado, int alumnoId, Alumno alumno, int cursoId, Curso curso) {
         Id = id;
         Estado = estado;
         AlumnoId = alumnoId;
         Alumno = alumno;
         CursoId = cursoId;
         Curso = curso;
+    }
+
+    public AlumnoCurso() {
     }
 
     public int getId() {

@@ -50,5 +50,18 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
+    implementation 'com.jjoe64:graphview:4.2.2'
+
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+
+    def cameraxVersion = "1.1.0-alpha05"
+    implementation "androidx.camera:camera-core:${cameraxVersion}"
+    implementation "androidx.camera:camera-camera2:${cameraxVersion}"
+    implementation "androidx.camera:camera-lifecycle:${cameraxVersion}"
+
+
+
 
 }

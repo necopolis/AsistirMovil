@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel;
 
 import com.avaca.asistirandroid.modelo.Alumno;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -21,17 +22,17 @@ public class GalleryViewModel extends ViewModel {
 
     public GalleryViewModel() {
         mText = new MutableLiveData<>();
-        Call<List<Alumno>> call= ApiClient.getMyApiClient().listaDeAlumnos();
-        call.enqueue(new Callback<List<Alumno>>() {
+        Call<ArrayList<Alumno>> call= ApiClient.getMyApiClient().listaDeAlumnos();
+        call.enqueue(new Callback<ArrayList<Alumno>>() {
             @Override
-            public void onResponse(Call<List<Alumno>> call, Response<List<Alumno>> response) {
+            public void onResponse(Call<ArrayList<Alumno>> call, Response<ArrayList<Alumno>> response) {
 
                 if(!response.isSuccessful()){
                     mText.setValue("Codigo: "+ response.code() );
                     return;
 
                 }
-                List<Alumno> postList= response.body();
+                ArrayList<Alumno> postList= response.body();
 
                 for (Alumno post: postList){
                     String content = "";
@@ -43,7 +44,7 @@ public class GalleryViewModel extends ViewModel {
             }
 
             @Override
-            public void onFailure(Call<List<Alumno>> call, Throwable throwable) {
+            public void onFailure(Call<ArrayList<Alumno>> call, Throwable throwable) {
                 mText.setValue(throwable.getMessage());
             }
         });
